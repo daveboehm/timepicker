@@ -1,0 +1,24 @@
+<div class="timepicker">
+    <select ng-change="updateModelString()" ng-model="hours">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <span>:</span>
+    <select ng-change="updateModelString()" ng-model="minutes">
+        <option value="{{minute}}" ng-repeat="minute in minutesOptions">{{minute}}</option>
+    </select>
+    <select ng-change="updateModelString()" ng-model="ampm">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+    </select>
+</div>

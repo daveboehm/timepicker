@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timepicker</title>
+    <link rel="stylesheet" href="timepicker.css">
+</head>
+
+<body ng-app="app">
+    
+
+    <div ng-controller="timepickerCtrl as vm">
+        <section>
+            <h1>Timepicker</h1>
+            <timepicker model="vm.timestamp" minute-interval="5"></timepicker>
+            <p>Model: {{vm.timestamp | uppercase}}</p>
+        </section>    
+    </div>
+
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
